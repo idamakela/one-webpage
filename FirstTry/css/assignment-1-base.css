@@ -1,0 +1,120 @@
+html {
+    height: 100vh;
+}
+
+body {
+    /*make to grid!*/
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #5C946E;
+    color: #2A2D34;
+    padding: 1em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+header {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+h1 {
+    width: 100%;
+}
+
+nav {
+    align-items: center;
+    background-color: #5C946E;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+}
+
+.nav-item {
+    margin-bottom: 0;
+    padding: 1ch;
+}
+
+.nav-item:hover {
+    /*hur får jag bort den lilla gröna raden?
+    Sidan man är på ska ha den här stilen*/
+    align-items: center;
+    background-color: #F2EEE2;
+    border-radius: 10% 10% 0 0;
+    color: #5C946E;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    /*bas stil för rubriker*/
+    color: #5C946E;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25em;
+    width: 100%;
+}
+
+.title-2 {
+    /*bas stil för rubriker*/
+    color: #FFFFFF;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25em;
+}
+
+.body-text {
+    /*bas stil för brödtext*/
+    color: #2A2D34;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+}
+
+.main-content {
+    background-color: #F2EEE2;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+/*PAGE SPECIFIC*/
+
+.container {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    margin: 2ch;
+}
+
+h2 {
+    margin: 0;
+    width: 100%;
+}
+
+.project-content {
+    /*prob need grid for this*/
+    align-items: flex-start;
+    display: flex;
+    flex-flow: nowrap column;
+    margin: 1em;
+    gap: 1em;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pic {
+    background-color: #5C946E;
+    border-radius: 10%;
+    padding: 2em;
+}

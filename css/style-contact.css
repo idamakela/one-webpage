@@ -1,0 +1,76 @@
+:root {
+    --main-color: #FFFFFF;
+    --secondary-color: #00A878;
+    --accent-color: #F3C178;
+    --light-secondary-color: #00a8784e;
+    --light-accent-color: #f3c27885;
+    --text-color: #0B0500;
+
+    --indent-base: 24px;
+    --indent-secondary: 14px;
+    --button-base-top: 8px;
+    --button-base-sides: 16px;
+    --base-radius: 13px;
+
+    font-size: 10px;
+    --body-font: 'Nunito', sans-serif;
+    --title-font: 'Quicksand', sans-serif;
+}
+
+form,
+.text-box {
+    display: flex;
+    flex-direction: column;
+    margin: var(--indent-base);
+    width: 100%;
+    align-self: center;
+}
+
+form input,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: 400;
+    background-color: var(--main-color);
+    border: 2px solid var(--accent-color);
+    border-radius: var(--base-radius);
+    padding: var(--indent-secondary);
+    margin-bottom: var(--indent-base);
+}
+
+form textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 76px;
+    margin-bottom: 0;
+}
+
+form label {
+    margin: 0 0 var(--indent-secondary) var(--indent-secondary);
+    font-size: 2rem;
+    font-family: var(--title-font);
+    color: var(--text-color);
+}
+
+button {
+    padding: var(--button-base-top) var(--button-base-sides);
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: var(--base-radius);
+    font-size: 2rem;
+    align-self: center;
+    margin-top: var(--indent-base);
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
+
+@media screen and (min-width:600px) {
+        form,
+        .text-box {
+            max-width: 460px;
+        }
+}

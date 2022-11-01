@@ -1,0 +1,58 @@
+:root {
+    --main-color: #FFFFFF;
+    --secondary-color: #00A878;
+    --accent-color: #F3C178;
+    --light-secondary-color: #00a8784e;
+    --light-accent-color: #f3c27885;
+    --text-color: #0B0500;
+
+    --indent-base: 24px;
+    --indent-secondary: 14px;
+    --button-base-top: 8px;
+    --button-base-sides: 16px;
+    --base-radius: 13px;
+
+    font-size: 10px;
+    --body-font: 'Nunito', sans-serif;
+    --title-font: 'Quicksand', sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    /*grid-template-columns: repeat(2,1fr);*/
+}
+
+.content div {
+    min-width: fit-content;
+    max-height: fit-content;
+
+}
+
+
+/*WHY SO UGLY???*/
+img {
+    width: 100%;
+    border-radius: var(--base-radius);
+}
+
+/*SHOULD PROB BE GRID*/
+/*.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--indent-base);
+}
+
+.content div {
+    margin: 0;
+    min-width: 40%;
+    max-width: 40%;
+    min-width: fit-content;
+}
+
+.pic-box {
+    display: block;
+    max-width: 50%;
+}*/

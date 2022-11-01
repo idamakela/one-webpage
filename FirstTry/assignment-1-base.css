@@ -1,0 +1,134 @@
+/*create opacity för hover på bilder och lägg till text!!*/
+
+:root {
+    /*60-30-10 color harmony*/
+    --main-color: #FFFFFF;
+    --secondary-color: #5C946E;
+    --accent-color: #F2EEE2;
+    --body-text: #2A2D2A;
+    /*Text style*/
+    --title-font:'Quicksand', sans-serif;
+    --body-text-font: 'Nunito', sans-serif;
+    font-size: 10px;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+}
+
+/*HEADER CONTENT BELOW*/
+
+header {
+    /*Måste jag ha grid?? hur gör jag h1 fast men menyn rörbar??*/
+    /*make display none and dispay block in media query*/
+    /*prob needs to be flex/grid rows, alltså två blocks brevid varandra utan att mitten flyttas. Så tre block?? */
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    display: grid;
+    font-family: var(--title-font);
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    text-align: center;
+}
+
+h1 {
+    align-self: center;
+    font-size: 3.2rem;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: var(--title-font);
+}
+
+/*FOR NAVBAR
+    Make position relative 
+    left to minus value
+    position int behind header with z index
+    transition the position 
+    and hover to visible place 
+*/
+
+.menu-button {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    color: var(--main-color);
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-left: 1em;
+}
+
+button:hover,
+.nav-item:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+nav {
+    background-color: var(--secondary-color);
+    display: flex;
+    padding: 2em;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    font-size: 1.4em;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.menu-button:hover ~ .nav-bar {
+    top: 0;
+}
+
+/*NAVBAR ABOVE*/
+/*HEADER ABOVE*/
+
+main {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    display: flex;
+    font-family: var(--title-font);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-item {
+    margin: 24px;
+}
+
+@media screen and (min-width:1040px) {
+    /*body {
+        grid-template-rows: 20% 1fr 15%;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    nav {
+        background-color: var(--secondary-color);
+        width: 100%;
+    }*/
+}
