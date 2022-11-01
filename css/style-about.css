@@ -18,10 +18,11 @@
 }
 
 /*WHY SO UGLY???*/
-/*img {
+img {
     width: 100%;
+    height: 100%;
     border-radius: var(--base-radius);
-}*/
+}
 
 .content {
     display: flex;
@@ -40,5 +41,5 @@
 
 .pic-box {
     display: block;
-    max-width: 50%;
+    min-width: 50%;
 }
