@@ -33,28 +33,22 @@ img {
 
 .content.pic-box,
 .content.text-box {
-    margin: 0;
-    max-width: 40%;
     min-width: fit-content;
-}
-
-.pic-box {
-    display: block;
-    min-width: 50%;
+    height: auto;
 }
 
 @media screen and (min-width:600px) {
     .content {
-        flex-direction: column;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 0;
     }
     
-    content.pic-box,
-    .content.text-box {
-        width: fit-content;
-    }   
-
-    img {
-        max-width: 50%;
+    .pic-box,
+    .text-box {
+        width: 40%;
     }
+
+    
+
 }
