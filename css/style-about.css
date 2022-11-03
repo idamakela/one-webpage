@@ -30,8 +30,8 @@ img {
     justify-content: space-evenly;
 }
 
-.content.pic-box,
-.content.text-box {
+.content.box-1,
+.content.box-2 {
     min-width: fit-content;
     height: auto;
 }
@@ -43,16 +43,16 @@ img {
         gap: 0;
     }
     
-    .pic-box,
-    .text-box {
+    .box-1,
+    .box-2 {
         width: 45%;
     }
 
-    .text-box p {
+    .box-1 p {
         font-size: 1.8rem;
     }
 
-    .text-box h3 {
+    .box-1 h3 {
         font-size: 2.4rem;
     }
 }
