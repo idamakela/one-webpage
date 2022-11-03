@@ -3,8 +3,8 @@
 Hi!!
 
 The pages I have done for the assingment are:
-  Contact
-  About
+  Contact, 
+  About and 
   Home
   
 You will find the html files in the html folder, and the css files in the css folder. 
