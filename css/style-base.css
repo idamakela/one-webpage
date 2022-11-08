@@ -69,7 +69,6 @@ main {
     border-radius: var(--second-radius);
     padding: var(--indent-base);
     margin: var(--indent-secondary) 0;
-
 }
 
 .box-2 {
@@ -105,7 +104,7 @@ p {
     padding: var(--indent-secondary) 0 0 var(--indent-secondary);
 }
 
-p .bold {
+p.bold {
     color: var(--text-color);
     font-family: var(--body-font);
     font-size: 1.6rem;

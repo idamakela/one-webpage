@@ -23,21 +23,21 @@ img {
     border-radius: var(--base-radius);
 }
 
-.content {
+.page-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.content.box-1,
-.content.box-2 {
+.page-content.box-1,
+.page-content.box-2 {
     min-width: fit-content;
     height: auto;
 }
 
-@media screen and (min-width: 1120px) {
-    .content {
+@media screen and (min-width: 999px) {
+    .page-content {
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 0;
