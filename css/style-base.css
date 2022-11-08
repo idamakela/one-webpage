@@ -1,5 +1,3 @@
-/*use % for elements sizing!!! */
-
 :root {
     --main-color: #FFFFFF;
     --secondary-color: #00A878;
@@ -21,9 +19,9 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -31,52 +29,52 @@ html {
 }
 
 body {
-    margin: 0;
-    height: 100%;
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin: 0;
 }
 
 header,
 footer {
     background-color: var(--secondary-color);
     color: var(--main-color);
-    padding: var(--indent-base);
-    font-size: 1.6rem;
     font-family: var(--title-font);
+    font-size: 1.6rem;
+    padding: var(--indent-base);
 }
 
 main {
     background-color: var(--base-color);
-    flex: 1 0 auto;
-    padding: var(--indent-base);
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
+    padding: var(--indent-base);
 }
 
 .page-indicator {
+    align-items: center;
     background-color: var(--accent-color);
-    min-height: 20%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    min-height: 20%;
 }
 
 .box-1 {
     background-color: var(--light-secondary-color);
-    border: 10px solid var(--secondary-color);
     border-radius: var(--second-radius);
-    padding: var(--indent-base);
+    border: 10px solid var(--secondary-color);
     margin: var(--indent-secondary) 0;
+    padding: var(--indent-base);
 }
 
 .box-2 {
     background-color: var(--light-accent-color);
-    border: 10px solid var(--accent-color);
     border-radius: var(--second-radius);
-    padding: var(--indent-base);
+    border: 10px solid var(--accent-color);
     margin: var(--indent-secondary) 0;
+    padding: var(--indent-base);
 }
 
 h1 {
@@ -112,37 +110,36 @@ p.bold {
     padding-top: var(--indent-secondary);
 }
 
-/*NAV*/
 .navbar {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
 }
 
 .navbar a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 .navbar label {
-    display: inline-flex;
     align-items: center;
     cursor: pointer;
+    display: inline-flex;
 }
 
 .menu {
-    width: 100%;
     max-height: 0;
     overflow: hidden;
+    width: 100%;
 }
 
 .menu-links {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
     padding: 10px;
     text-transform: capitalize;
 }
@@ -155,49 +152,45 @@ p.bold {
     max-height: 100%;
 }
 
-/*MENU PAGE*/
 .construction {
-    font-size: 360%;
-    font-family: var(--title-font);
     color: var(--text-color);
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    font-family: var(--title-font);
+    font-size: 360%;
     gap: 2.4rem;
     height: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
-
-/*FOOTER*/
 footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 footer a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 footer h2 {
-    margin: 10px 50px 10px 0;
     font-size: 2.0rem;
+    margin: 10px 50px 10px 0;
 }
 
 footer span {
-    margin-right: 6px;
     display: none;
+    margin-right: 6px;
 }
 
-/*HOVER EFFECTS*/
 .nav-item,
 .footer-item a {
-    padding: var(--button-base-top) var(--button-base-sides);
-    box-sizing: border-box;
     border-radius: 13px;
+    box-sizing: border-box;
+    padding: var(--button-base-top) var(--button-base-sides);
     transition: 0.5s;
 }
 
@@ -207,19 +200,17 @@ footer span {
     color: var(--secondary-color);
 }
 
-/*RESPONSIVE*/
 @media screen and (min-width:600px) {
     
-    /*NAVBAR*/
     .menu {
-        width: auto;
         max-height: 100%;
+        width: auto;
     }
 
     .menu-links {
         flex-direction: row;
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
     
     #toggler,
@@ -227,9 +218,8 @@ footer span {
         display: none;
     } 
 
-    /*FOOTER*/
     footer span {
-        margin-right: 6px;
         display: inline-flex;
+        margin-right: 6px;
     }
 }

@@ -1,26 +1,7 @@
-:root {
-    --main-color: #FFFFFF;
-    --secondary-color: #00A878;
-    --accent-color: #F3C178;
-    --light-secondary-color: #00a8784e;
-    --light-accent-color: #f3c27885;
-    --text-color: #0B0500;
-
-    --indent-base: 24px;
-    --indent-secondary: 14px;
-    --button-base-top: 8px;
-    --button-base-sides: 16px;
-    --base-radius: 13px;
-
-    font-size: 10px;
-    --body-font: 'Nunito', sans-serif;
-    --title-font: 'Quicksand', sans-serif;
-}
-
 img {
-    width: 100%;
-    height: 100%;
     border-radius: var(--base-radius);
+    height: 100%;
+    width: 100%;
 }
 
 .page-content {
@@ -32,15 +13,15 @@ img {
 
 .page-content.box-1,
 .page-content.box-2 {
-    min-width: fit-content;
     height: auto;
+    min-width: fit-content;
 }
 
 @media screen and (min-width: 999px) {
     .page-content {
         flex-wrap: wrap;
-        justify-content: space-evenly;
         gap: 0;
+        justify-content: space-evenly;
     }
     
     .box-1,

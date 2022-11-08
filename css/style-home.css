@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 2%;
+    justify-content: center;
 }
 
 .box-1,
@@ -17,4 +17,15 @@
 
 .page-content a:hover {
     text-decoration: underline var(--text-color);
+}
+
+@media screen and (min-width:600px) {
+
+    .page-content h3 {
+        font-size: 2.4rem;
+    }
+
+    .page-content p {
+        font-size: 1.8rem;
+    }
 }
