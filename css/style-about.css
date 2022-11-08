@@ -1,32 +1,25 @@
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 img {
     border-radius: var(--base-radius);
     height: 100%;
     width: 100%;
 }
 
-.page-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+@media screen and (min-width: 600px) {
 
-.page-content.box-1,
-.page-content.box-2 {
-    height: auto;
-    min-width: fit-content;
-}
-
-@media screen and (min-width: 999px) {
     .page-content {
         flex-wrap: wrap;
-        gap: 0;
-        justify-content: space-evenly;
+        gap: 0 2.5rem;
+        justify-content: center;
     }
-    
+
     .box-1,
     .box-2 {
-        width: 45%;
+        max-width: 56rem;
     }
 
     .box-1 p {

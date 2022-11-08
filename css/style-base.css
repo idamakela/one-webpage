@@ -6,12 +6,12 @@
     --light-accent-color: #f3c27885;
     --text-color: #0B0500;
 
-    --indent-base: 24px;
-    --indent-secondary: 14px;
-    --button-base-top: 8px;
-    --button-base-sides: 16px;
-    --base-radius: 13px;
-    --second-radius: 25px;
+    --indent-base: 2.4rem;
+    --indent-secondary: 1.4rem;
+    --button-base-top: 0.8rem;
+    --button-base-sides: 1.6rem;
+    --base-radius: 1.3rem;
+    --second-radius: 2.5rem;
 
     font-size: 10px;
     --body-font: 'Nunito', sans-serif;
@@ -64,7 +64,7 @@ main {
 .box-1 {
     background-color: var(--light-secondary-color);
     border-radius: var(--second-radius);
-    border: 10px solid var(--secondary-color);
+    border: 1rem solid var(--secondary-color);
     margin: var(--indent-secondary) 0;
     padding: var(--indent-base);
 }
@@ -79,7 +79,7 @@ main {
 
 h1 {
     font-size: 2.4rem;
-    margin: 10px 50px 10px 0;
+    margin: 1rem 5rem 1rem 0;
 }
 
 h2 {
@@ -138,9 +138,9 @@ p.bold {
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     list-style: none;
-    padding: 10px;
+    padding: 1rem;
     text-transform: capitalize;
 }
 
@@ -157,7 +157,7 @@ p.bold {
     display: flex;
     flex-direction: column;
     font-family: var(--title-font);
-    font-size: 360%;
+    font-size: 3.6rem;
     gap: 2.4rem;
     height: 100%;
     justify-content: center;
@@ -178,17 +178,17 @@ footer a {
 
 footer h2 {
     font-size: 2.0rem;
-    margin: 10px 50px 10px 0;
+    margin: 1rem 5rem 1rem 0;
 }
 
 footer span {
     display: none;
-    margin-right: 6px;
+    margin-right: 0.6rem;
 }
 
 .nav-item,
 .footer-item a {
-    border-radius: 13px;
+    border-radius: 1.3rem;
     box-sizing: border-box;
     padding: var(--button-base-top) var(--button-base-sides);
     transition: 0.5s;
@@ -220,6 +220,6 @@ footer span {
 
     footer span {
         display: inline-flex;
-        margin-right: 6px;
+        margin-right: 0.6rem;
     }
 }

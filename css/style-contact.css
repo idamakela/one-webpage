@@ -11,9 +11,9 @@ form input,
 textarea {
     background-color: var(--main-color);
     border-radius: var(--base-radius);
-    border: 2px solid var(--accent-color);
+    border: 0.2rem solid var(--accent-color);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.6em;
+    font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: var(--indent-base);
     padding: var(--indent-secondary);
@@ -21,9 +21,8 @@ textarea {
 
 form textarea {
     margin-bottom: 0;
-    min-height: 76px;
+    min-height: 7.5rem;
     resize: vertical;
-    width: 100%;
 }
 
 form label {
@@ -51,9 +50,10 @@ button:hover {
 }
 
 @media screen and (min-width:600px) {
+
         form,
         .box-1 {
-            max-width: 460px;
+            max-width: 46rem;
         }
 
         .box-1 h3 {
