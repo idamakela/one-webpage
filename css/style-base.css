@@ -200,6 +200,11 @@ footer span {
     color: var(--secondary-color);
 }
 
+.nav-item .active {
+    text-decoration: underline var(--main-color);
+    
+}
+
 @media screen and (min-width:600px) {
     
     .menu {
